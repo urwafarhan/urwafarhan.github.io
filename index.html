@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urwa Farhan | Fashion and Design Graduate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .hero { position:relative; min-height:78vh; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+        .hero-background::before {
+            content:""; position:absolute; inset:0; z-index:1;
+            background: linear-gradient(120deg,#fff1f8 0%, #f0f7ff 50%, #f7fff5 100%);
+            background-size:200% 200%; animation:bgShift 10s ease infinite;
+        }
+        @keyframes bgShift { 0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%} }
+
+        .blob { position:absolute; border-radius:50%; filter:blur(40px); opacity:0.75; transform:translate3d(0,0,0); z-index:1; }
+        .blob.b1 { width:360px; height:360px; right:6%; top:6%; background: rgba(245,179,228,0.65); animation:move1 12s ease-in-out infinite; }
+        .blob.b2 { width:300px; height:300px; left:6%; top:18%; background: rgba(160,220,255,0.55); animation:move2 14s ease-in-out infinite; }
+        .blob.b3 { width:420px; height:420px; left:28%; bottom:-8%; background: rgba(200,255,210,0.45); animation:move3 16s ease-in-out infinite; }
+
+        @keyframes move1 { 0%{transform:translate(0,0)}50%{transform:translate(-6%,6%)}100%{transform:translate(0,0)} }
+        @keyframes move2 { 0%{transform:translate(0,0)}50%{transform:translate(6%,-6%)}100%{transform:translate(0,0)} }
+        @keyframes move3 { 0%{transform:translate(0,0)}50%{transform:translate(-6%,-4%)}100%{transform:translate(0,0)} }
+
+        .hero-content { position:relative; z-index:3; text-align:center; padding:3rem 1rem; color:#111; }
+        .hero-name { font-family:'Playfair Display', serif; font-size:3rem; letter-spacing:2px; margin:0; color:#111; }
+        .hero-subtitle, .hero-description { margin:0.5rem 0; color:#333; }
+        @media(min-width:768px){ .hero-name{font-size:4rem} .hero-subtitle{font-size:1.25rem} .hero-description{font-size:1rem} }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="blob b1" aria-hidden="true"></div>
+            <div class="blob b2" aria-hidden="true"></div>
+            <div class="blob b3" aria-hidden="true"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-name">URWA FARHAN</h1>
+            <p class="hero-subtitle">Fashion and Design Graduate</p>
+            <p class="hero-description">Exploring fashion through design, construction, and styling.</p>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="photo-gallery">
+            <div class="photo-item">
+                <img src="images/DSC_2936.JPG" alt="Fashion Photography">
+                <div class="photo-text">I am Urwa, a fashion and design graduate with a strong interest in creative development and craftsmanship. My work is driven by curiosity, learning, and a desire to understand fashion beyond aesthetics. I enjoy exploring ideas through design, construction, and styling. Each project reflects growth, intention, and attention to detail.</div>
+            </div>
+            <div class="photo-item">
+                <img src="images/DSC_2945.JPG" alt="Fashion Photography">
+                <div class="photo-text">Fashion, for me, is a balance between creativity and structure. With a background in design and hands on technical skills, I enjoy translating ideas into tangible outcomes. I am constantly learning and refining my approach. My goal is to grow into a thoughtful and skilled creative professional.</div>
+            </div>
+            <div class="photo-item">
+                <img src="images/DSC_2947.JPG" alt="Fashion Photography">
+                <div class="photo-text">I approach fashion with a mindset rooted in learning and experimentation. My education has allowed me to explore design, garment construction, and visual storytelling. I enjoy working through process and detail. Growth and consistency remain central to my journey.</div>
+            </div>
+            <div class="photo-item">
+                <img src="images/DSC_2950.JPG" alt="Fashion Photography">
+                <div class="photo-text">As a fashion graduate, I am interested in how ideas evolve into finished designs. My experience has shaped a practical yet creative approach to my work. I value collaboration, adaptability, and continuous improvement. Each step forward adds to my creative identity.</div>
+            </div>
+            <div class="photo-item">
+                <img src="images/DSC_2952.JPG" alt="Fashion Photography">
+                <div class="photo-text">My interest in fashion extends beyond trends to technique and concept. I enjoy understanding how design, styling, and research come together. With each project, I aim to strengthen my skills and confidence. I see learning as an ongoing part of my career path.</div>
+            </div>
+            <div class="photo-item">
+                <img src="images/DSC_2954.JPG" alt="Fashion Photography">
+                <div class="photo-text">I am motivated by creativity and the process of building something meaningful. My background in fashion design has helped me develop technical skills and a thoughtful design approach. I enjoy refining details and exploring new ideas. Progress and learning guide my work.</div>
+            </div>
+            <div class="photo-item">
+                <img src="images/DSC_3037.JPG" alt="Fashion Photography">
+                <div class="photo-text">Fashion allows me to combine creativity with structure and discipline. Through education and experience, I have developed a strong foundation in design and construction. I enjoy challenging myself creatively while staying open to growth. My focus is on evolving with purpose.</div>
+            </div>
+            <div class="photo-item">
+                <img src="images/DSC_3044.JPG" alt="Fashion Photography">
+                <div class="photo-text">I see fashion as a continuous learning journey. My work reflects experimentation, research, and attention to craftsmanship. I enjoy exploring different aspects of design and styling. Each experience helps shape my professional direction.</div>
+            </div>
+            <div class="photo-item">
+                <img src="images/DSC_3062.JPG" alt="Fashion Photography">
+                <div class="photo-text">With a background in fashion and design, I am building my creative path step by step. I value process, collaboration, and learning through practice. My interests continue to grow as I explore the industry. I aim to develop work that feels intentional and refined.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-background" id="aboutBackground"></div>
+        <div class="about-container">
+            <div class="about-content">
+                <p class="about-text">
+                    I am a fashion and design graduate with a Pearson BTEC Level 5 Higher National Diploma in Art and Design Fashion. My background combines creative design training with professional internship experience, allowing me to approach fashion with both artistic sensitivity and practical understanding.
+                </p>
+                <p class="about-text">
+                    My experience includes pattern cutting, garment making, styling, trend forecasting, and CAD, along with exposure to academic administration and admissions marketing. I enjoy working in collaborative environments, contributing fresh ideas, and continuously developing my technical and communication skills.
+                </p>
+                <p class="about-text">
+                    I am particularly interested in fashion design, styling, and understanding how global trends and international standards influence the fashion industry. I am currently focused on learning, growing, and building a meaningful career in the fashion and creative industries.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="contact-title">Let's connect.</h2>
+            <p class="contact-description">Open to creative opportunities, collaborations, and professional conversations.</p>
+            <a href="mailto:hello@urwafashion.com" class="contact-email">urwaf649@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <div class="modal-images">
+                    <div class="modal-image" style="background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);"></div>
+                    <div class="modal-image" style="background: linear-gradient(135deg, #f0f0f0 0%, #d5d5d5 100%);"></div>
+                    <div class="modal-image" style="background: linear-gradient(135deg, #fafafa 0%, #e5e5e5 100%);"></div>
+                </div>
+                <div class="modal-info">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-category" id="modalCategory"></p>
+                    <p class="modal-description">
+                        An exploration of design, craftsmanship, and concept development, focusing on construction, styling, and creative expression.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
